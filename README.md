@@ -6,16 +6,16 @@ At its current version, the features in my configuration include the essential p
 
 # Features
  
-- Package management via (Lazy.nvim)[https://github.com/folke/lazy.nvim]
-- Colorscheme via (Catppuccin)[https://github.com/catppuccin/nvim]
-- Fuzzy finding and grepping via (telescope.nvim)[https://github.com/nvim-telescope/telescope.nvim]
-- Highlighting and indenting via (nvim-treesitter)[https://github.com/nvim-treesitter/nvim-treesitter]
-- Custom statusline via (lualine.nvim)[https://github.com/nvim-lualine/lualine.nvim]
+- Package management via [Lazy.nvim](https://github.com/folke/lazy.nvim)
+- Colorscheme via [Catppuccin](https://github.com/catppuccin/nvim)
+- Fuzzy finding and grepping via [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- Highlighting and indenting via [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- Custom statusline via [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 
 # To-do List
  
 Functionalities to be added:
-[ ] LSP suppport
-[ ] Markdown writing and previewing
-[ ] Python debugging
-[ ] LaTeX editing and previewing
+- [ ] LSP suppport
+- [ ] Markdown writing and previewing
+- [ ] Python debugging
+- [ ] LaTeX editing and previewing
