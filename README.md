@@ -9,21 +9,13 @@ At its current version, the features in my configuration include the essential p
 - Package management via [Lazy.nvim](https://github.com/folke/lazy.nvim)
 - Colorscheme via [Catppuccin](https://github.com/catppuccin/nvim)
 - Fuzzy finding and grepping via [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-- Telescoping Vim UI select via (telescope-ui-select.nvim)[https://github.com/nvim-telescope/telescope-ui-select.nvim]
 - Highlighting and indenting via [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - Custom statusline via [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
-- File system management via [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
-- LSP server installation and management via [mason.nvim](https://github.com/mason-org/mason.nvim) and [mason-lspconfig](https://github.com/mason-org/mason-lspconfig.nvim#configuration)
-- LSP server configurations via [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
-
-# Installed LSP servers
-- `lua_ls` - Offers Lua language support.
-- `pyright` - Static type checker for Python.
 
 # To-do List
  
 Functionalities to be added:
-- [X] LSP suppport
+- [ ] LSP suppport
 - [ ] Markdown writing and previewing
 - [ ] Python debugging
 - [ ] LaTeX editing and previewing
