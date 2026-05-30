@@ -1,11 +1,5 @@
 return {
   {
-    "mason-org/mason.nvim",
-    config = function()
-      require("mason").setup()
-    end
-  },
-  {
     "mason-org/mason-lspconfig.nvim",
     opts = {
         ensure_installed = { "lua_ls", "pyright" },
@@ -16,13 +10,31 @@ return {
     },
   },
   {
-    "neovim/nvim-lspconfig",
+    "hrsh7th/cmp-nvim-lsp",
+    event = { "BufReadPre", "BufNewFile" },
     config = function()
-      vim.lsp.enable("lua_ls")
-      vim.lsp.enable("pyright")
-      vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
-      vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
-      vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, {})
-    end
-  }
+      local cmp_nvim_lsp = require("cmp_nvim_lsp")
+      local capabilities = cmp_nvim_lsp.default_capabilities()
+
+      vim.lsp.config("*", {
+        capabilities = capabilities,
+      })
+    end,
+  },
+  {
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    opts = {
+      ensure_installed = {
+        "prettier", -- prettier formatter
+        "stylua", -- lua formatter
+        "isort", -- python formatter
+        "black", -- python formatter
+        "pylint",
+        "eslint_d",
+      },
+    },
+    dependencies = {
+      "williamboman/mason.nvim",
+    },
+  },
 }
