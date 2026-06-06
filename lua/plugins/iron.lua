@@ -68,7 +68,6 @@ return {
 				restart_repl = "<space>rR", -- calls `IronRestart` to restart the repl
 				send_motion = "<space>sc",
 				visual_send = "<space>sc",
-				send_file = "<space>sf",
 				send_line = "<space>sl",
 				send_paragraph = "<space>sp",
 				send_until_cursor = "<space>su",
@@ -94,5 +93,16 @@ return {
 		-- iron also has a list of commands, see :h iron-commands for all available commands
 		vim.keymap.set("n", "<space>rf", "<cmd>IronFocus<cr>")
 		vim.keymap.set("n", "<space>rh", "<cmd>IronHide<cr>")
+		vim.keymap.set("n", "<space>sf", function()
+			vim.cmd("write")
+
+			local file = vim.fn.expand("%:p")
+
+			iron.send(nil, {
+				"%run -i " .. vim.fn.fnameescape(file),
+			})
+		end, {
+			desc = "Run current file in IPython with cwd and interactive namespace",
+		})
 	end,
 }
