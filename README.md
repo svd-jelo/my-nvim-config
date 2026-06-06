@@ -18,6 +18,7 @@ At its current version, the features in my configuration include the essential p
 - Code formatting via [conform.nvim](https://github.com/stevearc/conform.nvim)
 - Auto completion via [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - Python linting via [nvim-lint](http://github.com/mfussenegger/nvim-lint)
+- Interactive REPL (including IPython!) via [iron.nvim](https://github.com/Vigemus/iron.nvim)
 
 # Installed LSP servers
 
